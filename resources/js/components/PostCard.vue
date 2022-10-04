@@ -14,7 +14,7 @@
                 <!-- <img v-if="isValidURL(post.post_image)" class="image-fluid" :src="post.post_image" alt="Image">
                 <img v-else class="image-fluid" :src="'storage/' + post.post_image" alt="Image"> -->
 
-                <img class="image-fluid" :src="isValidURL(post.post_image) ? post.post_image : 'storage/' + post.post_image " alt="Image">
+                <img class="image-fluid" :src="isValidURL(post.post_image) ? post.post_image : 'http://127.0.0.1:8000/storage/' + post.post_image " alt="Image">
 
             </div>
             <p class="card-text m-3">

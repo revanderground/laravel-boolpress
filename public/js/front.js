@@ -2289,7 +2289,7 @@ var render = function render() {
   }, [_c("img", {
     staticClass: "image-fluid",
     attrs: {
-      src: _vm.isValidURL(_vm.post.post_image) ? _vm.post.post_image : "storage/" + _vm.post.post_image,
+      src: _vm.isValidURL(_vm.post.post_image) ? _vm.post.post_image : "http://127.0.0.1:8000/storage/" + _vm.post.post_image,
       alt: "Image"
     }
   })]), _vm._v(" "), _c("p", {
