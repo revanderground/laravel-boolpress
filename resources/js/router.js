@@ -1,5 +1,5 @@
 //oltre a importare tutto il necessario
-import App from './views/App';
+import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 Vue.use(VueRouter)
@@ -8,6 +8,7 @@ Vue.use(VueRouter)
 import About from './pages/About';
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
+import SinglePost from './pages/SinglePost';
 
 //che per ogni pagina avrò: path(uri), name (by name calls), component di riferimento
 
@@ -26,6 +27,13 @@ const router = new VueRouter ({
             name: 'contacts',
             component: Contacts
         },
+        {
+            path: '/posts/:id',
+            name: 'singlePost',
+            component: SinglePost
+        },
+
+
     ],
 
 });

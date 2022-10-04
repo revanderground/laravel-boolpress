@@ -1,3 +1,4 @@
+import Vue from 'vue';
 window.Vue = require('vue');
 
 //importiamo il componente app

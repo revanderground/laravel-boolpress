@@ -7,22 +7,41 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav mr-auto w-100">
+                    <li class="nav-item">
+                        <router-link to="/" class="nav-link" >
+                            Home
+                        </router-link>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <router-link to="/about" class="nav-link" >
+                            About
+                        </router-link>
+                   </li>
+
+                    <li class="nav-item">
+                        <router-link to="/contacts" class="nav-link" >
+                            Contacts
+                        </router-link>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
+                        <router-link to="/posts/4" class="nav-link" >
+                            Post-2
+                        </router-link>
                     </li>
+
+                    <li class="nav-item ml-auto mx-3">
+                        <a href="/admin/" class="nav-link" >
+                            Admin panel
+                        </a>
+                    </li>
+
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                        <input class="form-control col-2 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
             </div>
         </nav>
     </header>
@@ -30,7 +49,7 @@
 
 <script>
 export default {
-    main: Header,
+    // main: Header,
 }
 </script>
 
