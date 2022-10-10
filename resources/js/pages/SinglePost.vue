@@ -23,7 +23,9 @@ export default {
 
     data: function(){
         return{
-            post: {},
+            post: {
+
+            },
             loading: false,
         }
     },
